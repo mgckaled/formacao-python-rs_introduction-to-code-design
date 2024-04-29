@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [scripts]
+server = "python run.py"
 lint = "pylint --rcfile=.pylintrc src/"
 lint-report = "pylint --rcfile=.pylintrc --report=y src/"
 
