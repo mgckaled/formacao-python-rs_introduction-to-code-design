@@ -7,11 +7,14 @@ name = "pypi"
 server = "python run.py"
 lint = "pylint --rcfile=.pylintrc src/"
 lint-report = "pylint --rcfile=.pylintrc --report=y src/"
+test = "pytest"
+test-list = "pytest -s -v"
 
 [packages]
 flask = "*"
 pylint = "*"
 pre-commit = "*"
+pytest = "*"
 
 [dev-packages]
 
