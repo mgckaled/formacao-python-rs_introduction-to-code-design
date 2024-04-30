@@ -6,6 +6,7 @@ disable=
       C0116, # missing-function-docstring
       E0015, # unrecognized-option,
       E0110, # abstract-class-instantiated
+      R0801, # similar-lines
       R0903, # too-few-public-methods
       W0237, # arguments-renamed
       W0703, # Catching too general exception Exception
