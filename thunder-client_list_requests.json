@@ -1,0 +1,79 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "m6_python_introduction_code_design",
+    "collectionId": "7527bff9-3a80-4c70-955a-9758994a0493",
+    "dateExported": "2024-04-30T22:56:04.960Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b802b6f0-7200-4e1a-ac71-fb6c7c781998",
+            "colId": "7527bff9-3a80-4c70-955a-9758994a0493",
+            "containerId": "",
+            "name": "send number to calculator 1",
+            "url": "http://localhost:3000/calculator/1",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-29T20:52:09.538Z",
+            "modified": "2024-04-30T19:46:28.115Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"number\": 1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0c4734fe-3fc7-43e7-99e4-a802c9c3d7dd",
+            "colId": "7527bff9-3a80-4c70-955a-9758994a0493",
+            "containerId": "",
+            "name": "send list of numbers to calculator 2",
+            "url": "http://localhost:3000/calculator/2",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-30T13:01:53.323Z",
+            "modified": "2024-04-30T19:46:38.042Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"numbers\": [2.12, 4.62, 1.32]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b191d77e-2f48-45c8-b82a-b0306bd6cd4e",
+            "colId": "7527bff9-3a80-4c70-955a-9758994a0493",
+            "containerId": "",
+            "name": "send list of numbers to calculator 3",
+            "url": "http://localhost:3000/calculator/3",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-30T17:29:59.018Z",
+            "modified": "2024-04-30T19:47:05.489Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"numbers\": [1, 1, 1, 1, 100]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "6a79fa41-522c-4c70-a8d4-9ea009e5a3ae",
+            "colId": "7527bff9-3a80-4c70-955a-9758994a0493",
+            "containerId": "",
+            "name": "send list of numbers to calculator 4",
+            "url": "http://localhost:3000/calculator/4",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-04-30T22:15:27.223Z",
+            "modified": "2024-04-30T22:16:34.510Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"numbers\": [30.1, 40.5, 50.0]\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "2WSn1xu_ZjbDaMpvS-HxRYbrTkkdu6_sb_tTdk6wqPU1SN7Eqkudy2MGf4ED_v3Yy7xZZGVLPFX0zm1M84mEMA"
+}
