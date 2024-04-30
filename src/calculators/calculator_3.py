@@ -18,6 +18,11 @@ class Calculator3:
 
         variance = self.__calculate_variance(input_data)
         multiplication = self.__calculate_multiplication(input_data)
+
+        if variance is None or multiplication is None:
+            raise HttpBadRequestError(
+                'Valores de variância ou multiplicação são None')
+
         self.__verify_results(variance, multiplication)
         formated_response = self.__format_response(variance)
 
@@ -42,9 +47,15 @@ class Calculator3:
         return multiplication
 
     def __verify_results(self, variance: float, multiplication: float) -> None:
+        if variance is None or multiplication is None:
+            raise HttpBadRequestError(
+                'Valores de entrada são None, não é possível comparar')
+        if not isinstance(variance, (int, float)) or not isinstance(multiplication, (int, float)):
+            raise HttpBadRequestError(
+                'Valores de entrada não são numéricos')
         if variance < multiplication:
-            raise HttpBadRequestError('Falha no processo: Variância menor que \
-                            multiplicação')
+            raise HttpBadRequestError(
+                'Falha no processo: Variância menor que multiplicação')
 
     def __format_response(self, variance: float) -> Dict:
         return {
