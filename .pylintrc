@@ -5,7 +5,9 @@ disable=
       C0115, # Missing-class-docstring
       C0116, # missing-function-docstring
       E0015, # unrecognized-option,
+      E0110, # abstract-class-instantiated
       R0903, # too-few-public-methods
+      W0237, # arguments-renamed
       W0703, # Catching too general exception Exception
 	W0719, # broad-exception-raised
       W0707, # raise-missing-from
