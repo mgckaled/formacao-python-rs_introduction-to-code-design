@@ -1,6 +1,6 @@
 from typing import Dict, List
 
-from flask import request as FlaskRequest
+from flask import Request
 
 from src.drivers.interfaces.driver_handler_interface import \
     DriverHandlerInterface
@@ -12,7 +12,7 @@ class Calculator3:
     def __init__(self, driver_handler: DriverHandlerInterface) -> None:
         self.__driver_handler = driver_handler
 
-    def calculate(self, request: FlaskRequest) -> Dict:  # type: ignore
+    def calculate(self, request: Request) -> Dict:
         body = request.json
         input_data = self.__validate_body(body)
 

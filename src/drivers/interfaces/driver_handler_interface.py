@@ -11,3 +11,7 @@ class DriverHandlerInterface(ABC):
     @abstractmethod
     def variance(self, number: List[float]) -> float:
         pass
+
+    @abstractmethod
+    def mean(self, number: List[float]) -> float:
+        pass
