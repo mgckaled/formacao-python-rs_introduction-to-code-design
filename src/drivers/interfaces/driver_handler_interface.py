@@ -5,7 +5,7 @@ from typing import List
 class DriverHandlerInterface(ABC):
 
     @abstractmethod
-    def standard_derivation(self, number: List[float]) -> float:
+    def standard_deviation(self, number: List[float]) -> float:
         pass
 
     @abstractmethod

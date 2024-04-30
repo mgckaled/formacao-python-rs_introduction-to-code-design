@@ -16,6 +16,9 @@ class MockDriverHandler(DriverHandlerInterface):
     def standard_deviation(self, number: List[float]) -> float:
         return 3
 
+    def variance(self, number: List[float]) -> float:
+        pass
+
 
 def test_calculate_integration():
     mock_request = MockRequest({
