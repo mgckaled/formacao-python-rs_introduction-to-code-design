@@ -14,9 +14,12 @@ class MockRequest:
 
 class MockDriverHandlerError(DriverHandlerInterface):
     def standard_deviation(self, number: List[float]) -> float:
-        return 3
+        pass
 
     def variance(self, number: List[float]) -> float:
+        return 2
+
+    def mean(self, number: List[float]) -> float:
         pass
 
 
@@ -25,6 +28,9 @@ class MockDriverHandler(DriverHandlerInterface):
         return 1000000
 
     def standard_deviation(self, number: List[float]) -> float:
+        pass
+
+    def mean(self, number: List[float]) -> float:
         pass
 
 

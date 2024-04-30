@@ -21,7 +21,7 @@ class MockDriverHandler(DriverHandlerInterface):
         pass
 
     def mean(self, number: List[float]) -> float:
-        pass
+        return 40.2
 
 
 def test_calculate_integration():
