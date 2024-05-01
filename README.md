@@ -23,9 +23,13 @@ Este repositório reuni o conteúdo dos módulos 6 e 7 da formação Python 2023
 
 Estudamos e aplicamos inicialmente alguns conceitos básicos sobre design de código e arquitetura de software visando uma construção de projeto simples, facilmente escalavel e de facil manutenção. Explorou-se os conceitos de separação de responsabilidades, tratamento de lógicas complexas, utilização de bibliotecas terceiras, testes unitários, dependências e tratamento de erros. O objetivo final é demonstrar como o uso de boas práticas de código podem gerar um projeto sustentavel.
 
+> [anotações](./.github/docs/m6-notes.md) do conteúdo
+
 ### Módulo 7 - Conceitos SOLID
 
 Neste módulo foi abordado um aprofundamento nos princípios propostos contidos na palavra SOLID. Demonstrou-se em código todos os casos necessários e apresentou-se a importância desses conceitos para desenvolvedores Python.
+
+> [anotações](./.github/docs/m6-notes.md) do conteúdo
 
 ## Tecnologias
 

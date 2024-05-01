@@ -17,6 +17,7 @@
     - [Classes Privadas com Métodos de Fábrica](#classes-privadas-com-métodos-de-fábrica)
     - [Métodos e Atributos Privados com Convenção de Nomeação](#métodos-e-atributos-privados-com-convenção-de-nomeação)
     - [Atributos Privados com Métodos de Acesso](#atributos-privados-com-métodos-de-acesso)
+  - [Questionário Avaliativo do Módulo 6](#questionário-avaliativo-do-módulo-6)
 
 ## Atributos, Médotos e Classes Privadas
 
@@ -293,4 +294,30 @@ print(carro.get_marca())  # Saída: Honda
 print(carro.get_modelo())  # Saída: Civic
 ```
 
+## Questionário Avaliativo - Módulo 6
+
+1 - *O que são testes de integração?* - **Resposta:** Testes que verificam a comunicação entre diferentes módulos de um sistema.
+
+2 - *O que é o `pytest`?* - **Resposta:** Uma biblioteca para realizar testes em Python.
+
+3 - *O que é uma exceção?* - **Resposta:** Uma condição que indica um erro durante a execução de um programa
+
+4 - *Para que serve o parâmetro self em um método de uma classe?* - **Resposta:** Para referenciar a própria instância da classe dentro do método.
+
+5 - *Para que serve um código HTTP 400?* - **Resposta:** Indica que a requisição foi mal-formada.
+
+6 - *O que são testes unitários?* - **Resposta:** Testes que verificam o funcionamento de um único módulo em isolamento
+
+7 - *Testes que verificam a usabilidade do sistema por diferentes tipos de usuários.* - **Resposta:** Ferramentas que facilitam a criação e execução de testes automatizados.
+
+8 - *O que é um mock?* - **Resposta:** Um objeto falso que simula o comportamento de um objeto real para fins de teste.
+
+9 - *Qual a principal vantagem de usar mocks em testes?* - **Resposta:** Aumentar a cobertura de testes do sistema em ambiente controlado.
+
+10 - *O que é o design pattern Facade?* - **Resposta:** Um padrão de projeto que define como objetos podem interagir entre si.
+
+11 - *O que é o design pattern Factory?* - **Resposta:** Um padrão de projeto que cria objetos de forma dinâmica
+
+> [voltar](#módulo-6---introdução-ao-design-de-código) ao topo da página
+>
 > [retornar](../../README.md) para a página anterior
