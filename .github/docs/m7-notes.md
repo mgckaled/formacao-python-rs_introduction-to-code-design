@@ -9,6 +9,9 @@
   - [Introdução ao SOLID](#introdução-ao-solid)
   - [Exemplos em Python](#exemplos-em-python)
   - [Questionário Avaliativo - Módulo 7](#questionário-avaliativo---módulo-7)
+  - [Desafios](#desafios)
+    - [Desafio SRP](#desafio-srp)
+    - [Desafio OCP](#desafio-ocp)
 
 ## Introdução ao SOLID
 
@@ -48,4 +51,72 @@ São 5 princípios de design de classe orientado a objetos. Esses cinco princíp
 
 9 - *Como o uso adequado dos princípios do SOLID pode facilitar a escalabilidade e a evolução de um sistema de software ao longo do tempo?* - **Resposta:** Promovendo a modularidade e a reutilização de código, permitindo que novos recursos sejam adicionados com mais facilidade.
 
+## Desafios
+
+### Desafio SRP
+
+Note que nessa classe, temos várias ações e responsabilidades. O que torna a manutenção, usabilidade e até a performance ruins. Seguindo o conceito do Princípio da Responsabilidade única, organize essa classe e, se necessário, crie outras classes com suas devidas responsabilidades.
+
+```python
+class TaskHandler:
+    def conect_api():
+        pass
+
+    def create_task():
+        pass
+
+    def update_task():
+        pass
+
+    def remove_task():
+        pass
+
+    def send_notification():
+        pass
+
+    def generate_report():
+        pass
+
+    def send_report():
+        pass
+```
+
+### Desafio OCP
+
+Imagine que uma clínica veterinária tem seu sistema próprio para aprovação de exames. No primeiro momento, ela tem um método para verificar exame de sangue. Em outro ela adiciona exame por raio-x. Notamos no código que, conforme a clínica adiciona exames, deverão adicionar uma validação para o exame. O que aumentaria a complexidade do código e a manutenção do mesmo. A solução deste caso pode ser feita com o princípio aberto-fechado (Open Closed Principle). Utilizando do conceito do OCP, crie uma interface e classes que implementam a mesma para que, caso a clínica necessite de um novo tipo de exame, uma nova classe seja adicionada, implementando métodos de uma interface padrão para exames.
+
+```python
+class AprovaExame:
+    def aprovar_solicitacao_exame(self, exame):
+
+        if exame_sangue.tipo == "sangue":
+            if aprovador.verifica_condicoes_exame_sangue(exame_sangue):
+                print("Exame sanguíneo aprovado!")
+
+        elif exame_raio_x.tipo == "raio-x":
+            if aprovador.verifica_condicoes_raio_x(exame_raio_x):
+                print("Raio-X aprovado!")
+                pass
+
+    def verifica_condicoes_exame_sangue(self, exame):
+        # implemente as condições específicas do exame de sangue
+        pass
+
+    def verifica_condicoes_raio_x(self, exame):
+        # implemente as condições específicas do exame de raio-x
+        pass
+
+# Exemplo de uso:
+class Exame:
+    def __init__(self, tipo):
+        self.tipo = tipo
+
+exame_sangue = Exame("sangue")
+exame_raio_x = Exame("raio-x")
+
+aprovador = AprovaExame()
+```
+
+> [voltar](#módulo-7---conceitos-de-solid) para o topo da página
+>
 > [retornar](../../README.md) para a página anterior
