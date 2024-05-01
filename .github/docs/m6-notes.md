@@ -1,4 +1,22 @@
-# Módulo 6
+# Módulo 6 - Introdução ao Design de Código
+
+> [retornar](../../README.md) para a página anterior
+
+## Sumário
+
+- [Módulo 6 - Introdução ao Design de Código](#módulo-6---introdução-ao-design-de-código)
+  - [Sumário](#sumário)
+  - [Atributos, Médotos e Classes Privadas](#atributos-médotos-e-classes-privadas)
+    - [Métodos e Atributos Privados](#métodos-e-atributos-privados)
+    - [Classes Privadas (usando nested classes)](#classes-privadas-usando-nested-classes)
+    - [Encapsulamento por Convenção](#encapsulamento-por-convenção)
+    - [Métodos e Atributos Privados com Decoradores](#métodos-e-atributos-privados-com-decoradores)
+    - [Classes Privadas (usando métodos estáticos)](#classes-privadas-usando-métodos-estáticos)
+    - [Encapsulamento por Convenção em Métodos de Acesso](#encapsulamento-por-convenção-em-métodos-de-acesso)
+    - [Atributos Privados com Property](#atributos-privados-com-property)
+    - [Classes Privadas com Métodos de Fábrica](#classes-privadas-com-métodos-de-fábrica)
+    - [Métodos e Atributos Privados com Convenção de Nomeação](#métodos-e-atributos-privados-com-convenção-de-nomeação)
+    - [Atributos Privados com Métodos de Acesso](#atributos-privados-com-métodos-de-acesso)
 
 ## Atributos, Médotos e Classes Privadas
 
@@ -190,36 +208,6 @@ print(pessoa.nome)  # Saída: Maria
 print(pessoa.__nome)
 ```
 
-### Métodos Privados Usando Decoradores
-
-```python
-class Calculadora:
-    def __init__(self, x, y):
-        self.__x = x
-        self.__y = y
-
-    # Método privado usando decorador
-    @staticmethod
-    def __validar_numero(numero):
-        return isinstance(numero, (int, float))
-
-    def somar(self):
-        if self.__validar_numero(self.__x) and self.__validar_numero(self.__y):
-            return self.__x + self.__y
-        else:
-            raise ValueError("Os números não são válidos")
-
-# Criando uma instância da classe
-calc = Calculadora(5, 3)
-
-# Chamando o método privado
-print(calc.somar())  # Saída: 8
-
-# Tentando chamar o método privado diretamente
-# resultará em um erro
-calc.__validar_numero(5)
-```
-
 ### Classes Privadas com Métodos de Fábrica
 
 ```python
@@ -240,7 +228,6 @@ produto = Fabrica.__Produto("Produto A")
 produto = Fabrica.criar_produto("Produto B")
 print(produto.nome)  # Saída: Produto B
 ```
-Claro, aqui estão mais alguns exemplos de métodos, atributos e classes privadas em Python:
 
 ### Métodos e Atributos Privados com Convenção de Nomeação
 
@@ -267,27 +254,6 @@ pessoa.saudacao()
 # Não gera erro, mas é uma convenção indicando que não deveriam ser acessados diretamente
 print(pessoa._nome)
 pessoa._metodo_privado()
-```
-
-### Classes Privadas em Métodos de Fábrica
-
-```python
-class Banco:
-    class __Conta:
-        def __init__(self, titular, saldo):
-            self.titular = titular
-            self.saldo = saldo
-
-    @staticmethod
-    def criar_conta(titular, saldo):
-        return Banco.__Conta(titular, saldo)
-
-# Criando uma instância da classe interna diretamente resultará em um erro
-conta = Banco.__Conta("João", 1000)
-
-# Criando uma conta usando o método de fábrica
-conta = Banco.criar_conta("Maria", 2000)
-print(f"Titular: {conta.titular}, Saldo: {conta.saldo}")
 ```
 
 ### Atributos Privados com Métodos de Acesso
@@ -326,3 +292,5 @@ carro.set_modelo("Civic")
 print(carro.get_marca())  # Saída: Honda
 print(carro.get_modelo())  # Saída: Civic
 ```
+
+> [retornar](../../README.md) para a página anterior

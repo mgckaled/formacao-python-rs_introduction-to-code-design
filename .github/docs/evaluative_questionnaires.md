@@ -1,6 +1,8 @@
 # Questionários Avaliativos
 
-## Quiz - Introdução ao Design de Código
+> [retornar](../../README.md) para a página anterior
+
+## Introdução ao Design de Código
 
 1 - *O que são testes de integração?* - **Resposta:** Testes que verificam a comunicação entre diferentes módulos de um sistema.
 
@@ -24,7 +26,7 @@
 
 11 - *O que é o design pattern Factory?* - **Resposta:** Um padrão de projeto que cria objetos de forma dinâmica.
 
-## Quiz - Conceitos SOLID
+## Conceitos SOLID
 
 1 - ** - **Resposta:**
 
@@ -43,3 +45,5 @@
 8 - ** - **Resposta:**
 
 9 - ** - **Resposta:**
+
+> [retornar](../../README.md) para a página anterior
